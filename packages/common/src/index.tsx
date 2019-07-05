@@ -1,15 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { StyleSheet, Text, View, Button } from "react-native";
+import { Router } from "./Router";
 
 export const App = () => {
-  const [count, setCount] = useState(0);
-
   return (
     <View style={styles.container}>
-      <Text style={styles.welcome}>Welcome to React Native!</Text>
-      <Text style={styles.instructions}>To get started, edit App.tsx</Text>
-      <Text style={styles.instructions}>{count}</Text>
-      <Button title="increment" onPress={() => setCount(count + 1)} />
+      <View style={styles.wrapper}>
+        <Router />
+      </View>
     </View>
   );
 };
@@ -19,16 +17,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#F5FCFF"
+    height: "100%"
   },
-  welcome: {
-    fontSize: 20,
-    textAlign: "center",
-    margin: 10
-  },
-  instructions: {
-    textAlign: "center",
-    color: "#333333",
-    marginBottom: 5
+  wrapper: {
+    backgroundColor: "#F5FCFF",
+    width: "100%",
+    maxWidth: 425
   }
 });
