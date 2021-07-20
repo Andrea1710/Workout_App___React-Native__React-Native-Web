@@ -14,7 +14,7 @@
     "mobx": "5.0.0",
     "mobx-react-lite": "1.0.1",
     "react": "16.8.2",
-    "react-native": "0.60"
+    "react-native": "0.62"
   },
   "devDependencies": {
     "@types/react-native": "0.57.36",

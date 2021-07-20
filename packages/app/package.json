@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "react": "^16.8.2",
-    "react-native": "^0.60"
+    "react-native": "^0.62"
   },
   "devDependencies": {
     "@wow/common": "1.0.0",
